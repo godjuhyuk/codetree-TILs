@@ -236,9 +236,9 @@ public class Main {
 				// 역추적 시작
 				Node temp = nodeMap[strongCannon.r][strongCannon.c];
 				while(true) {
-					if(temp.r == weakCannon.r && temp.c == weakCannon.c) break;
 					map[temp.r][temp.c] -= (map[weakCannon.r][weakCannon.c]) / 2;
 					temp = nodeMap[temp.r][temp.c];
+					if(temp.r == weakCannon.r && temp.c == weakCannon.c) break;
 				}
 				
 			} else {
