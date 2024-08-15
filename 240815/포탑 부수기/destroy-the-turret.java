@@ -248,7 +248,6 @@ public class Main {
 //			 * - 주위 8개 방향에 있는 포탑도 피해를 입는데, 공격력의 절반만큼 피해를 받음.
 //			 * - 공격자는 해당 공격에 영향을 받지 않음
 //			 * - 가장자리에 떨어져도 위처럼 다 벽통과
-				strongCannon.attack -= weakCannon.attack;
 				map[strongCannon.r][strongCannon.c] -= map[weakCannon.r][weakCannon.c];
 				
 				for(int [] d : deltas) {
